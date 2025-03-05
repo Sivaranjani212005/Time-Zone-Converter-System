@@ -19,7 +19,6 @@ export default function App() {
           <Route path='/signup' element={<Signup />} />
           <Route path='/login' element={<Login />} />
           <Route path='/converter' element={<Converter />} />
-          <Route path='/results' element={<Results />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/Navbar'element={<Navbar/>}/>
