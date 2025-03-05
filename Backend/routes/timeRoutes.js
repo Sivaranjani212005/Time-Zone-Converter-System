@@ -1,4 +1,4 @@
-// routes/converterRoutes.js
+
 const express = require('express');
 const moment = require('moment-timezone');
 const ConversionLog = require('../models/TimeConverter');
@@ -21,7 +21,7 @@ router.post('/create', async (req, res) => {
 
     const convertedTime = targetTime.format('HH:mm');
 
-    // Optional: Save the conversion log to the database
+   
     const conversionLog = new ConversionLog({
       sourceTime: time,
       sourceZone,
