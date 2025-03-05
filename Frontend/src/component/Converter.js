@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import moment from 'moment-timezone';
 import './Converter.css';
-
 export default function Converter() {
     const [time, setTime] = useState('');
     const [sourceZone, setSourceZone] = useState('');
     const [targetZone, setTargetZone] = useState('');
     const [result, setResult] = useState('');
-
     const handleConvert = () => {
         if (time && sourceZone && targetZone) {
             try {
@@ -23,7 +21,6 @@ export default function Converter() {
             setResult('Please fill in all fields.');
         }
     };
-
     return (
         <div className="converter-container">
             <h1>Time Zone Converter</h1>
