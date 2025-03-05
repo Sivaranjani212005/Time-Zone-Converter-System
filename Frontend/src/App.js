@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Signup from './component/Signup';
 import Login from './component/Login';
 import { AuthProvider } from './component/Auth';
@@ -24,7 +23,6 @@ export default function App() {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/Navbar'element={<Navbar/>}/>
-          
         </Routes>
       </div>
     </AuthProvider>
