@@ -1,6 +1,4 @@
-
 const mongoose = require('mongoose');
-
 const timeConversionSchema = new mongoose.Schema({
     sourceTime: { type: String, required: true },
     sourceZone: { type: String, required: true },
