@@ -1,9 +1,7 @@
 import React from 'react';
 import Signup from './component/Signup';
 import Login from './component/Login';
-import { AuthProvider } from './component/Auth';
 import Converter from './component/Converter';
-import Results from './component/Results';
 import About from './component/About';
 import Contact from './component/Contact';
 import { Route, Routes } from "react-router-dom";
@@ -11,7 +9,6 @@ import Navbar from './component/Navbar';
 import Home from './component/Home';
 export default function App() {
   return (
-    <AuthProvider>
       <div className="App">
         <Navbar /> 
         <Routes>
@@ -24,6 +21,5 @@ export default function App() {
           <Route path='/Navbar'element={<Navbar/>}/>
         </Routes>
       </div>
-    </AuthProvider>
   );
 }
